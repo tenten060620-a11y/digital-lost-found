@@ -166,9 +166,4 @@ else:
                         st.rerun()
                 else:
                     st.caption("🔒 *Login sebagai Admin untuk mengubah/menghapus laporan.*")
-                    if username == "admin aja mi" and password == "smansel_andalan":
-    st.session_state.logged_in = True
-    st.success("Login berhasil!")
-    st.rerun()
-else:
-    st.error("Username atau password salah!")
+                    
