@@ -30,7 +30,7 @@ def init_db():
         )
     ''')
     # Akun default admin (Username: admin aja mi, Password: smansel_andalan)
-    pwd_hash = hashlib.sha256("admin123".encode()).hexdigest()
+    pwd_hash = hashlib.sha256("smansel_andalan".encode()).hexdigest()
     c.execute("INSERT OR IGNORE INTO users VALUES ('admin', ?, 'Admin')", (pwd_hash,))
     conn.commit()
     conn.close()
