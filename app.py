@@ -5,7 +5,7 @@ import hashlib
 # ==========================================
 # PILAR 1 & 3: DATABASE & PEMISAHAN LOGIKA
 # ==========================================
-DB_FILE = "lost_and_found.db"
+DB_FILE = "lost_and_found"
 
 def init_db():
     conn = sqlite3.connect(DB_FILE)
